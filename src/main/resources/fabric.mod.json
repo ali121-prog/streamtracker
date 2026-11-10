@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "streamtracker",
+  "version": "${version}",
+  "name": "Stream Tracker",
+  "description": "Client-side stream overlay and alert tracker for payments received in chat.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.streamtracker.StreamTrackerClient"],
+    "modmenu": ["com.example.streamtracker.config.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "cloth-config": "*",
+    "modmenu": "*"
+  }
+}
